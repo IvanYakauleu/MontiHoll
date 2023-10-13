@@ -5,6 +5,8 @@ import './score.scss';
 export default function Score() {
   const win = useSelector((state) => state.main.win);
   const lose = useSelector((state) => state.main.lose);
+
+  const precentWins = win ? (win * 100) / (win + lose) : 0;
   return (
     <div className="score">
       <div className="score__win">
@@ -14,7 +16,7 @@ export default function Score() {
         <span>Поражений:</span> {lose}
       </div>
       <div className="score__percent">
-        <span>Процент побед:</span> {win ? (win * 100) / (win + lose) : 0}%
+        <span>Процент побед:</span> {win ? precentWins.toFixed(1) : 0}%
       </div>
     </div>
   );
