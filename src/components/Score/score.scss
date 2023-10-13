@@ -1,0 +1,24 @@
+.score {
+  display: flex;
+  justify-content: space-between;
+
+  &__win,
+  &__lose,
+  &__percent {
+    font-size: 20px;
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__win {
+    span {
+      color: green;
+    }
+  }
+  &__lose {
+    span {
+      color: red;
+    }
+  }
+}

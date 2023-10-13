@@ -1,0 +1,51 @@
+main {
+  height: calc(100vh - 150px);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &_no {
+    margin: 0;
+  }
+
+  &_yes {
+    margin: 0;
+    background-color: green;
+  }
+}
+
+.game {
+  &__info {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
